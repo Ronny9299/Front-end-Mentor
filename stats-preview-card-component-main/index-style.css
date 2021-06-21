@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+/*--------------------------------------------------Block--------------------------------------------------*/
+
+.BlockMain {
+    background-color:hsl(233, 47%, 7%);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.BlockHeader {
+    grid-column: 1/5;
+    grid-row: 1/2
+}
+
+.BlockSection {
+    background-color:hsl(244, 38%, 16%);
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(2);
+}
+
+.BlockTextPrincipal{
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10%;
+    
+}
+
+.BlockTextSecundario{
+    color: hsla(0, 0%, 100%, 0.6);
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.BlockFigure{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.BlockFooter {
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
+
+
+
+/*--------------------------------------------------Elements--------------------------------------------------*/
+
+.BlockTextSecundario>p>span{
+    font-size: 25px;
+    color: hsl(0, 0%, 100%);
+}
+.BlockTextSecundario>p{
+    font-size: 15px;
+}
+h1{
+    font-size: 30px;
+}
+img{
+    height: 100%;
+    filter: hue-rotate(277deg) saturate(64%) brightness(61%);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.titulo{
+    color: hsl(0, 0%, 100%);
+}
+.span-one{
+    color: hsl(277, 64%, 61%);
+}
+.span-two{
+    font-size: 15px;
+    color:hsla(0, 0%, 100%, 0.75)
+}
+
